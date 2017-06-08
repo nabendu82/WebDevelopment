@@ -1,0 +1,44 @@
+body{
+	background: url(http://img.clipartall.com/wood-bw-clip-art-wood-grain-clip-art-444_596.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	color: #ff1a1a;
+	background: #99ccff;
+	border: 1px solid #6600cc;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+li{
+	color: #40ff00;
+	border: 1px solid #6600cc;
+}
+
+.design-selection,.design-archives,.zen-resources{
+	background-color: #ffff80;
+}
+
+#jimmy{
+	text-decoration: underline wavy red;
+}
+
+h2{
+	color: #d11aff;
+	background: #99ccff;
+	border: 1px solid #6600cc;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+h3{
+	color: #ff6600;
+	background: #99ccff;
+	border: 1px dashed #6600cc
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+p{
+	color: #ff0066;
+
+}
