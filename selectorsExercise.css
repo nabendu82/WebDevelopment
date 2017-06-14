@@ -105,5 +105,5 @@ h1:hover{
 
 /*Make the <a> element's that have been visited gray */
 a:visited{
-	color: gray;
-}
+	color: gray
+;}
