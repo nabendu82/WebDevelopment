@@ -74,3 +74,16 @@ movies.forEach(function(name){
 });
 
 //function inside objects
+var obj = {
+	name: "Chuck",
+	age: 45,
+	isCoder: false,
+	friends: ["Katie", "Lina"],
+	add: function(x,y){
+		return x+y;
+	}
+}
+
+console.log("*** The function inside Object is ***");
+console.log(obj);
+console.log("'obj.add(10,15)' " + obj.add(10, 15));
