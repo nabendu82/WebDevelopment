@@ -12,3 +12,15 @@ $("input").keypress(function(event){
 		alert("Enter was pressed");
 	}
 });
+
+$("h2").on("click", function(){
+	$(this).css("color", "purple");
+});
+
+$("button").on("mouseenter", function(){
+	$(this).css("font-weight", "bold");
+});
+
+$("button").on("mouseleave", function(){
+	$(this).css("font-weight", "normal");
+});
