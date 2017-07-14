@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Local Weather</title>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="local.css">
+</head>
+<body>
+	<div id="section1" class="container-fluid">
+	  <div class = "row text-center">
+	   <div class = "col-xs-12">
+	    <h1 style="font-family: 'Lobster'; font-size: 50px">Local Weather</h1>
+		</div>
+	  </div>
+	  <div class = "row text-center">
+	  	<div class="col-xs-4"></div>
+	    <div class = "col-xs-4 well">
+	      <p id="weather"></p>
+	    </div>
+	    <div class="col-xs-4"></div>
+	  </div>
+	  <div class = "row text-center">
+	    <div class = "col-xs-12">
+
+			 <form action="/select-metric">
+	        <label>
+	          <input type="radio" checked name="farenheit-celcius" value="f"> Farenheit</label>
+	        <label>
+	          <input type="radio" name="farenheit-celcius" value="c"> Celsius</label>
+	      </form>
+
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="local.js"></script>
+
+
+</body>
+</html>
