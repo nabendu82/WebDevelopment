@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Wikipedia Viewer</title>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="wiki.css">
+</head>
+<body>
+	<div id="section1" class="container-fluid">
+	  <div class = "row">
+	   <div class = "col-md-12">
+	    <h1>Wikipedia Viewer</h1>
+		</div>
+	  </div>
+	  <div class = "row">
+	    <div class = "col-md-12">
+	      <p class="search-icon">
+	        <input name="search" id="search" type="search" placeholder="What do you want to learn today">
+	      </p>
+	    </div>
+	  </div>
+	  <hr>
+	  <div class = "row">
+	  	<div class = "col-md-4"></div>
+	    <div class = "col-md-4">
+	    	<button class = "btn btn-default btn-sm" id = "searchButton"><i class="fa fa-fire fa-fw"></i> Search</button>
+			<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+				<button class = "btn btn-default btn-sm" id = "getMessage"><i class="fa fa-fire fa-fw"></i>	Random Article</button>
+			</a>
+	    </div>
+	    <div class = "col-md-4"></div>
+	  </div>
+	  <br>
+	  <div class = "row">
+	    <div class = "col-md-12">
+		 <article class="results">
+	      </article>
+		    </div>
+	  </div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="wiki.js"></script>
+</body>
+</html>
