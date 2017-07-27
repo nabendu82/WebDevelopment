@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Concateates Two list</title>
+	<script type="text/javascript">
+	function concatenates(arr1, arr2){
+		
+		var result = [];
+		arr1.forEach(function(val){
+			result.push(val);
+		});
+
+		arr2.forEach(function(item){
+			result.push(item);
+		});
+		return result;
+		//Easy Solution
+		//return arr1.concat(arr2);
+	}
+	console.log(concatenates(['a','b','c'],[1,2,3]));
+
+	</script>
+
+</head>
+<body>
+	<h1>Concateates Two list</h1>
+	<p>Write a function that concatenates two lists</p>
+	<h3>Open the console for answer</h3>
+
+</body>
+</html>
