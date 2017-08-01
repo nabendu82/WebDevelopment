@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Record Collection</title>
+</head>
+<body>
+	<h1>Record Collection</h1>
+	<p>You are given a JSON object representing a part of your musical album collection. Each album has several properties and a unique id number as its key. Not all albums have complete information.</p>
+	<p>Write a function which takes an album's id (like 2548), a property prop (like "artist" or "tracks"), and a value (like "Addicted to Love") to modify the data in this collection.</p>
+	<p>If prop isn't "tracks" and value isn't empty (""), update or set the value for that record album's property.</p>
+	<p>Your function must always return the entire collection object.</p>
+	<p>There are several rules for handling incomplete data:</p>
+	<p>If prop is "tracks" but the album doesn't have a "tracks" property, create an empty array before adding the new value to the album's corresponding property.</p>
+	<p>If prop is "tracks" and value isn't empty (""), push the value onto the end of the album's existing tracks array.</p>
+	<p>If value is empty (""), delete the given prop property from the album.</p>
+	<h3>Open the console for the answer</h3>
+	<script type="text/javascript" src="recordCollection.js"></script>
+
+</body>
+</html>
