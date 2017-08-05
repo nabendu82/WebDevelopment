@@ -38,3 +38,27 @@ var newInv = [
 ];
 
 console.log(updateInventory(curInv, newInv));
+
+//Stephen Mayeux solution
+function updateInventoryStephen(arr1, arr2) {
+    var inventory = arr1.concat(arr2).reduce(function(acc, next){
+        if(acc[next[1]]){
+            acc[next[1]] += next[0];
+        } else {
+            acc[next[1]] = next[0];
+        }
+        return acc;
+
+    },{});
+
+    return Object.keys(inventory).map(function(value){
+        return [inventory[value], value];
+    }).sort(function(a,b) { //sorting alphabatically
+        if (a[1] < b[1]) return -1;
+        else if (a[1] > b[1]) return 1;
+        return 0;
+    });
+
+}
+
+console.log(updateInventoryStephen(curInv, newInv));
