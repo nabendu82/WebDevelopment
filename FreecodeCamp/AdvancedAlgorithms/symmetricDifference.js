@@ -33,7 +33,7 @@ function diffArray(arr1, arr2) {
 console.log(sym([1, 2, 3], [5, 2, 1, 4]));
 console.log(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]));
 
-//Stephen Mayeux solution
+//Stephen Mayeux solutions
 function symStephen(args) {
 	args = Array.prototype.slice.call(arguments);
 
