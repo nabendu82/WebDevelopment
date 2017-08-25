@@ -25,7 +25,18 @@ function fdo(){
 
 new fdo();
 
-//Method #4
+//Method #4 - calling a function by bib=nding this reference to arbitary object
+function fuzz(){
+  this.name = name;
+  console.log("Method #4");
+  console.log(this);
+}
+
+fuzz.call({});
+
+//Method 4 Example
+
+
 function createEmployeeObj(firstName, lastName, gender, age){
   
   this.firstName = firstName;
@@ -38,5 +49,29 @@ function createEmployeeObj(firstName, lastName, gender, age){
 }
 
 
-var employee = new createEmployeeObj("Nabs", "Biswas", "M", 30);
-employee.happyBirthday();
+var employee1 = new createEmployeeObj("Nabs", "Biswas", "M", 30);
+
+
+var employee2 = new createEmployeeObj("Shikha", "Biswas", "F", 30);
+employee2.happyBirthday();
+
+
+function HRdept(name){
+  this.name = name;
+}
+
+var hrRep = new HRdept("raman");
+
+hrRep.happyBirthday = employee1.happyBirthday; //Create a function from createEmployeeObj
+//Below won't work as hrRep doesn't have a function happyBirthday
+// hrRep.happyBirthday();
+
+//Using method 4
+hrRep.happyBirthday.call(employee1);
+console.log(hrRep);
+console.log(employee1);
+
+
+
+
+
