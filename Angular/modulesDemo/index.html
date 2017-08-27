@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="modulesApp"> <!-- To have DOM know it's an angular app -->
+<head>
+	<title>modulesApp</title>
+	<link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+	<script type="text/javascript" src="angular.js"></script>
+	<script src="myModules.js"></script>
+	<script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body> 
+<h1>modules App</h1>
+<div ng-controller="TagDemoCtrl as ctrl">
+	<tags-input ng-model="ctrl.tags"></tags-input>	
+</div>
+</body>
+</html>

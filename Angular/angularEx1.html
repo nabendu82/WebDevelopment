@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app> <!-- To have DOM know it's an angular app -->
+<head>
+	<title>Angular Demo</title>
+	<script type="text/javascript" src="angular.js"></script>
+</head>
+<body ng-init="hourOfDay = 18"> <!-- Creating and assigning a value to it -->
+	<h1>Angular Demo</h1>
+	<p ng-if="hourOfDay < 12">Good morning</p> <!-- Conditional statement  -->
+	<p ng-if="hourOfDay > 17">Good evening</p> <!-- Conditional statement  -->
+	<p>The hour of the day is: <span ng-bind="hourOfDay"></span></p> <!-- ng-bind allows you to add value of a variable into the markup -->
+	<p>The hour of the day is: {{ hourOfDay }}</p> <!-- Shorthand for ng-bind-->
+</body>
+</html>

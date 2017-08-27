@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="directiveApp"> <!-- To have DOM know it's an angular app -->
+<head>
+	<title>directive</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="directive.js"></script>
+</head>
+<body> 
+<h1>Directive App</h1>
+<div ng-controller="DirectiveCtrl as ctrl">
+	<!-- ng-if removes the element from the DOM -->
+	<input type="checkbox" ng-model="ctrl.checked">
+	<p ng-if="ctrl.checked">Show some content</p>
+	<br>
+	<!-- ng-show only hides the element in the DOM by display:none property -->
+	<input type="checkbox" ng-model="ctrl.checked2">
+	<p ng-show="ctrl.checked2">Show some  more content</p>
+	<br>
+	<input type="checkbox" ng-model="ctrl.checked3">
+	<p ng-hide="ctrl.checked3">Show some still more content</p>
+
+	<p ng-repeat="i in ctrl.myList">Hello</p>
+
+	<p ng-repeat="i in ctrl.myList">{{ i }}</p>
+
+	<div ng-repeat="obj in ctrl.myList2">
+		<p>
+			Element: {{ $index }}
+		</p>
+		<p>
+			First: {{ $first }}
+		</p>
+		<p>
+			Name: {{ obj.name }}
+		</p>
+		<p>
+			Age: {{ obj.age }}
+		</p>
+		<hr>
+	</div>
+	
+</div>
+</body>
+</html>

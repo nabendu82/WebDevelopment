@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="nestedCOntroller"> 
+<head>
+	<title>Nested Controller Example</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="nested.js"></script>
+</head>
+<body> 
+<h1>Nested Controller Example</h1>
+<!-- Creates different scopes for each controllers -->
+<div ng-controller="Ctrl1">
+	<p>{{ testProp }}</p>	
+</div>
+
+<div ng-controller="Ctrl2">
+	<p>{{ testProp }}</p>
+</div>
+
+<!-- NESTED -->
+<div ng-controller="Ctrl1">
+	<p>{{ testProp }}</p>
+	<div ng-controller="Ctrl2">
+		<p>{{ testProp }}</p>
+	</div>	
+</div>
+
+<!-- NESTED with Ctrl4 having no testProp -->
+<div ng-controller="Ctrl3">
+	<p>{{ testProp }}</p>
+	<div ng-controller="Ctrl4">
+		<p>{{ testProp }}</p>
+	</div>	
+</div>
+
+<!-- SOLVING the problem with controller as alias way--> 
+<div ng-controller="Ctrl5 as c5">
+	<p>{{ c5.testProp }}</p>
+	<div ng-controller="Ctrl6 as c6">
+		<p>{{ c6.testProp }}</p>
+	</div>	
+</div>
+</body>
+</html>

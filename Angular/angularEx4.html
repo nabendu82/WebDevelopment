@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngModelExamples"> <!-- To have DOM know it's an angular app -->
+<head>
+	<title>ngModelExamples</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="ngModel.js"></script>
+</head>
+<body> 
+<div ng-controller="ExamplesCtrl">
+	<h1>ngModel Example</h1>
+	<p>Text: <input ng-change="textChange()" ng-model="textString" type="text" name="name"> </p>
+	<p>Check: <input ng-model="booleanValue" type="checkbox" name="check"></p>
+	<p>Date: <input ng-model="dateString" type="date" name="date"></p>
+	<p>Radio: 
+		Option 1<input ng-model="radioValue" type="radio" name="radio" value="opt1">
+		Option 2<input ng-model="radioValue" type="radio" name="radio" value="opt2">
+		Option 3<input ng-model="radioValue" type="radio" name="radio" value="opt3">
+	</p>
+
+	<p>Text Input: {{ textString }}</p>
+	<p>Check Input: {{ booleanValue }}</p>
+	<p>Date Input: {{ dateString }}</p>
+	<p>Radio Input: {{ radioValue }}</p>
+	<p>The input field has changed {{count}} times.</p>
+
+</div>
+</body>
+</html>
